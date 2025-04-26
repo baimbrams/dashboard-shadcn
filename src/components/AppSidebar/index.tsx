@@ -20,13 +20,13 @@ import {
   SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "./ui/sidebar";
+} from "../ui/sidebar";
 import Link from "next/link";
 
-import MenuHeader from "./Sidebar/MenuHeader";
-import MenuFooter from "./Sidebar/MenuFooter";
-import CollapsableMenu from "./Sidebar/CollapsableMenu";
-import NestedMenu from "./Sidebar/NestedMenu";
+import MenuHeader from "../AppSidebar/MenuHeader";
+import MenuFooter from "../AppSidebar/MenuFooter";
+import CollapsableMenu from "../AppSidebar/CollapsableMenu";
+import NestedMenu from "../AppSidebar/NestedMenu";
 
 const items = [
   {
@@ -61,6 +61,7 @@ const AppSidebar = () => {
     <Sidebar collapsible="icon">
       <MenuHeader />
 
+      {/* Content */}
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
